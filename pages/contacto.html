@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Cargo mi propio CSS -->
+    <link rel="stylesheet" href="../css/style.css"> 
+
+    <title>Bodega Achaval-Ferrer Agrelo</title>
+  </head>
+ <body>
+
+    <!-- inicia nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-2"  id="botonera">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logoachaval.png" alt="logo">
+            </a>
+            <h1>Agrelo, Luján de Cuyo.</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bt-shop">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./restaurant.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./visitas.html">Degustaciones y Visitas Guiadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ends nav -->
+
+    <!-- section -->
+    <section class="py-3" id="section">
+        <div class="container-fluid">
+            <div class="row">
+                
+
+                <article class="col-md-12 col-lg-6 pl-5 pb-3">
+                    <div class="sectionText">
+                        <h2>Hacé tu reserva</h2>
+                        <form action="envio.php" method="post" id="contacto">
+                            <fieldset>
+                                <legend>Datos Personales</legend>
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" placeholder="nombre completo" name="nombre" id="nombre">
+                                <br>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="inserte su email" name="email" id="email">
+                                <br>
+                                <label for="telefono">Teléfono</label>
+                                <input type="number" placeholder="número de telefono" name="telefono" id="telefono">
+                                <br>
+                                <label for="cantidad">Cantidad de Personas</label>
+                                <input type="number" placeholder="máximo 6 personas" name="cantidad" id="cantidad">
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>Info de Reserva</legend>
+                                <label for="restaurant">Restaurant</label>
+                                <input type="checkbox" value="restaurant" id="restaurant" name="restaurant">
+                                <label for="menu">Menú</label>
+                                <select name="menu" id="menu">
+                                    <option value="menu0">--</option>
+                                    <option value="menu1">Menú de 3 Pasos</option>
+                                    <option value="menu2"> Menú de 4 Pasos</option>
+                                </select>
+                                <br>
+                                <label for="degustacion">Degustación y visita guiada</label>
+                                <input type="checkbox" value="degustacion" name="degustacion" id="degustacion">
+                                <label for="restaurant">Turno</label>
+                                <select name="menu" id="menu">
+                                    <option value="sinturno">--</option>
+                                    <option value="turno1">11am</option>
+                                    <option value="turno2">12am</option>
+                                    <option value="turno3">15pm</option>
+                                </select>
+                                <p>Se le enviará un correo electrónico con la confirmación de su reserva.</p>
+                            </fieldset>
+                            <br>
+                            <label for="mensaje">Deja tu mensaje</label>
+                            <br>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="deja tu mensaje"></textarea>
+                            <br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Cancelar">
+                        </form>
+                    </div>
+                </article>
+
+                <article class="col-md-12 col-lg-6 pl-5 pb-3">
+                    <div class="sectionText">
+                        <h2>Contacto</h2>
+                        <p>Correo eléctrónico: afagrelo@addhjhd.com</p>
+                        <p>Tel. 26464616499</p>
+                        <p>Dirección: Ruta 7 Km 1056 - Agrelo,Luján de Cuyo, Mendoza, Argentina.</p>
+                    </div>
+                </article>   
+            </div><!-- ends row-->
+        </div><!-- ends container-->
+    </section> 
+
+    
+    <!--footer-->
+    <footer class="text-center text-black " id="footer">
+        <section class="py-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <article class="col-md-6 col-lg-6 pb-3">
+                        <h4>Seguinos en nuestras redes</h4>
+                        <a href=https://www.instagram.com/achavalferrer/ target=".">
+                            <img src="../img/instagram.png" alt=".." class="logFooter">
+                        </a>
+                        <a href="https://www.facebook.com/achaval.ferrer/" target="_blank">
+                            <img src="../img/facebook.png" alt=".." class="logFooter">
+                        </a>
+                    </article>
+
+                    <article class="col-md-6 col-lg-6 pb-md-3">
+                        <h4>Conoce más sobre nuestros vinos</h4>
+                        <a href=https://www.achaval-ferrer.com/ target="_blank">
+                            <img src="../img/logobordo.jpg" alt="página principal" class="logFooter">
+                    </article>
+                </div>
+            </div>
+        </section>   
+    </footer>
+    <!-- ends footer--> 
+    
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
