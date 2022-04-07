@@ -7854,20 +7854,5 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .sectionText {
   text-align: center; }
 
-/*$paleta:(
-	'uno': #af40f6,
-	'dos': #df1ce6,
-	'tres':#bb20c1,
-	'cuatro':#ecdde9,
-	'cinco': #9b9a9b,
-	'seis': #292829,
-	'siete':#e205bb,
-	'ocho':#dfa1d4,
-	'nueve':#bd9eb8,
-	'diez':#e7cfe3,
-	'once': #6e646c,
-	'doce': #7f3472,
-	'trece':#3f393e,)*/
 .logFooter {
-  width: 30px;
-  /*background-color: map-get($map:$paleta, $key:'nueve');*/ }
+  width: 30px; }

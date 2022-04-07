@@ -1,0 +1,48 @@
+body{
+	background-color:$mainColor;
+}
+h1,
+h2,
+h3,
+h4{
+	font-family:$fontMain;
+	margin: 10px 0;
+}
+
+.backcolor {
+	background-color: aquamarine;
+}
+
+.backfooter {
+	@extend.backcolor;
+}
+
+@keyframes textAlpha {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.textAlpha {
+	animation-name: textAlpha;
+	animation-duration: 5s;
+}
+
+@keyframes textAlpha {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.textAlpha2 {
+	animation-name: textAlpha;
+	animation-duration: 5s;
+}

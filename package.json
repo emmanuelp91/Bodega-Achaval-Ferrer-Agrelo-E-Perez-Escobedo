@@ -1,0 +1,21 @@
+{
+  "name": "entrega-sass--seo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/purge.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "build": "purgecss --css css/style.css --content index.html -o css/purge.css"
+  },
+  "author": "emmanuelperez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "description": ""
+}
