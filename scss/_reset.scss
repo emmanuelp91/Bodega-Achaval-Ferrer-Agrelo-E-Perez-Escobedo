@@ -9,13 +9,6 @@ h4{
 	margin: 10px 0;
 }
 
-.backcolor {
-	background-color: aquamarine;
-}
-
-.backfooter {
-	@extend.backcolor;
-}
 
 @keyframes textAlpha {
 	from {

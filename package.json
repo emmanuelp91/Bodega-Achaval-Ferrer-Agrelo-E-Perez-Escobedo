@@ -17,5 +17,13 @@
   "dependencies": {
     "bootstrap": "^5.1.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelp91/Bodega-Bootstrap-Emmanuel-P-rez-Escobedo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emmanuelp91/Bodega-Bootstrap-Emmanuel-P-rez-Escobedo/issues"
+  },
+  "homepage": "https://github.com/emmanuelp91/Bodega-Bootstrap-Emmanuel-P-rez-Escobedo#readme",
   "description": ""
 }
