@@ -45,7 +45,7 @@
         </div>
     </nav>
     <!-- ends nav -->
-
+   
     <!-- section -->
     <section class="py-3" id="section">
         <div class="container-fluid">
@@ -56,49 +56,55 @@
                         <form action="envio.php" method="post" id="contacto">
                             <fieldset>
                                 <legend>Datos Personales</legend>
-                                <label for="nombre">Nombre y Apellido</label>
-                                <input type="text" placeholder="nombre completo" name="nombre" id="nombre">
-                                <br>
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="inserte su email" name="email" id="email">
-                                <br>
-                                <label for="telefono">Teléfono</label>
-                                <input type="number" placeholder="número de telefono" name="telefono" id="telefono">
-                                <br>
-                                <label for="cantidad">Cantidad de Personas</label>
-                                <input type="number" placeholder="máximo 6 personas" name="cantidad" id="cantidad">
-                            </fieldset>
-                            <br>
-                            <fieldset>
-                                <legend>Información de Reserva</legend>
-                                <label for="restaurant">Restaurant</label>
-                                <input type="checkbox" value="restaurant" id="restaurant" name="restaurant">
-                                <label for="menu">Menú</label>
-                                <select name="menu" id="menu">
-                                    <option value="menu0">--</option>
-                                    <option value="menu1">Menú de 3 Pasos</option>
-                                    <option value="menu2"> Menú de 4 Pasos</option>
-                                    <option value="menu2"> Teanner</option>
-                                </select>
-                                <br>
-                                <label for="degustacion">Degustación y visita guiada</label>
-                                <input type="checkbox" value="degustacion" name="degustacion" id="degustacion">
-                                <label for="restaurant">Turno</label>
-                                <select name="menu" id="menu">
-                                    <option value="sinturno">--</option>
-                                    <option value="turno1">11am</option>
-                                    <option value="turno2">12am</option>
-                                    <option value="turno3">15pm</option>
-                                </select>
-                                <p>Se le enviará un correo electrónico con la confirmación de su reserva.</p>
-                            </fieldset>
-                            <br>
-                            <label for="mensaje">Deja tu mensaje</label>
-                            <br>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="deja tu mensaje"></textarea>
-                            <br>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Cancelar">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                                            </div>  
+                                        </div> 
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Datos de Contacto</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Teléfono">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Email" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="exampleInputEmail1" class="form-label">Información de Reserva</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Cantidad de Personas</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">1</option>
+                                            <option value="5">2</option>
+                                            <option value="6">3</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Tipo de Servicio</option>
+                                            <option value="1">Visita Guiada y Degustación</option>
+                                            <option value="2">Restaurant</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Deje su Mensaje</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
                         </form>
                     </div>
                 </article>
@@ -109,12 +115,13 @@
                         <p>Correo electrónico: afagrelo@addhjhd.com</p>
                         <p>Tel. 26464616499</p>
                         <p>Dirección: Ruta 7 Km 1056 - Agrelo,Luján de Cuyo, Mendoza, Argentina.</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15898.858333408647!2d-68.89055941521617!3d-33.10058477588032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ce8a0d3aafb%3A0xd40bbb62159d6630!2sBodega%20Melipal!5e0!3m2!1ses-419!2sar!4v1644781664985!5m2!1ses-419!2sar"
-                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+                        <iframe class="sectionText"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15898.858333408647!2d-68.89055941521617!3d-33.10058477588032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ce8a0d3aafb%3A0xd40bbb62159d6630!2sBodega%20Melipal!5e0!3m2!1ses-419!2sar!4v1644781664985!5m2!1ses-419!2sar"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
-                </article>   
-               
+                </article>  
             </div><!-- ends row-->
         </div><!-- ends container-->
     </section> 
