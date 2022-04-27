@@ -1,11 +1,11 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Krub:ital,wght@0,700;1,400&family=Quintessential&family=Redressed&family=Roboto:wght@300&display=swap");
-
-
 body {
   background-color: #f8f8f3; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Dancing Script", cursive;
   margin: 10px 0; }
 
@@ -29,6 +29,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   animation-name: textAlpha;
   animation-duration: 5s; }
 
+.logFooter {
+  width: 30px; }
+
 #botonera {
   margin-bottom: -45px; }
   #botonera img {
@@ -42,6 +45,3 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .sectionText {
   text-align: center; }
-
-.logFooter {
-  width: 30px; }
